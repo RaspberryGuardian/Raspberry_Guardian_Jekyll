@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+	<meta charset="utf-8">
+	<title>About | Raspberry Guardian</title>
+	<meta name="description" content="Raspberry Piをベースにした学校や自宅でのIoTセキュリティのソリューションを研究しています.">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-Frame-Options" content="sameorigin">
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="/css/main.css">
+
+	<!--Favicon-->
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+
+	<!-- Canonical -->
+	<link rel="canonical" href="http://raspberry-guardian.info//about/">
+
+	<!-- RSS -->
+	<link rel="alternate" type="application/atom+xml" title="Raspberry Guardian" href="http://raspberry-guardian.info//feed.xml" />
+
+	<!-- Font Awesome -->
+	<link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+
+	<!-- Google Fonts -->
+	<link href="//fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,700italic,400italic" rel="stylesheet" type="text/css">
+
+  <!-- KaTeX -->
+	
+	<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.1.1/katex.min.css">
+	<script src="//cdnjs.cloudflare.com/ajax/libs/KaTeX/0.1.1/katex.min.js"></script>
+	
+
+	<!-- Google Analytics -->
+	
+</head>
+
+  <body>
+    <header class="site-header">
+	<div class="branding">
+		
+		<a href="/">
+			<img class="avatar" src="/img/avatar.png" alt=""/>
+		</a>
+		
+		<h1 class="site-title">
+			<a href="/">Raspberry Guardian</a>
+		</h1>
+	</div>
+	<nav class="site-nav">
+		<ul>
+			
+			
+			
+			
+			<li>
+				<a class="page-link" href="/about/">
+					About
+				</a>
+			</li>
+			
+			
+			
+			
+			
+			<li>
+				<a class="page-link" href="/redmine/">
+					Go_Redmine
+				</a>
+			</li>
+			
+			
+			
+			
+			
+			
+			<!-- Social icons from Font Awesome, if enabled -->
+			
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li>
+	<a href="https://github.com/RaspberryGuardian" title="Follow on GitHub">
+		<i class="fa fa-fw fa-github"></i>
+	</a>
+</li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<li>
+	<a href="https://twitter.com/hohno_at_kuimc" title="Follow on Twitter">
+		<i class="fa fa-fw fa-twitter"></i>
+	</a>
+</li>
+
+
+
+
+
+
+		</ul>
+	</nav>
+</header>
+
+    <div class="content">
+      <article class="feature-image">
+  <header style="background-image: url('/img/Raspberries02-2.jpg')">
+    <h1 class="title">About</h1>
+  </header>
+  <section class="post-content"><p>近年，電子回路を活用したものづくり（いわゆる電子工作）を楽しむ人々が増えている．特に2012年初頭に登場した英国製のボードコンピュータ Raspberry Pi は，手のひらサイズでありながらUNIX系OSをインストールでき，3000円台で入手できたため，発売開始から1年半で200万台以上出荷するベストセラーとなった．</p>
+
+<p>これまでも，マイクロコントローラにセンサやアクチュエータを接続してものづくりを楽しむ電子工作の世界と，インターネットの普及が作り出した情報通信ネットワークの世界を取り持つ方法は存在したが，複雑な操作を要したり十分な性能がでなかったり高価だったりした．</p>
+
+<p>安価ではあるが電子工作用途であれば十分高性能なRaspberry Piの登場と，IoT(The Internet of Things)分野の研究成果が一般に普及し始める時期とが一致したこともあり，Raspberry Piを使ったインターネットと連携する電子工作が愛好者の間に急速に普及し始めた．</p>
+
+<p>このことは電子工作という個人の趣味の世界が，セキュリティ上の深刻な脅威をインターネットから直接受ける事態になったことも意味し，個人的に電子工作を楽しみたいだけであっても，彼らの作品がネットワークへの接続性を持つのであれば，業務として情報通信機器を日夜管理するインターネット分野のスペシャリストと同等の情報セキュリティに関する専門知識と運用技術が必要となった．単に電子工作を楽しみたいだけの者にとってこの要求は大きな負担となろう．</p>
+
+<p>一例をあげるなら，Raspberry Pi で最も普及している Raspbian という Debian UNIX系のディストリビューションをインストールした場合，インストールした時点で設定されている pi というユーザの初期パスワードは広く知られたある文字列に決められている．初期設定のままの Raspbian は，起動とともに sshd が特に制限を受けない状態で起動して遠隔ログインを提供し，ユーザ pi は sudo コマンドで管理者権限を全面的に取得するのに自分のパスワードを入力するだけでよい．このような初期設定のままのLinux機が特段の配慮なくインターネットに接続され始めたら何が起こりうるかは情報セキュリティに一定の知見のある者であれば容易に想像できるはずである．</p>
+
+<p>しかし，電子工作を楽しみたいだけの者は「動いているのだからそれでよいのではないか」と考えるかもしれない．
+加えてRaspberry Pi には一般ユーザ権限でコマンドラインから自由に操作できる汎用のI/Oポートがある．インターネットからアクセス可能なRaspberry PiのGPIOポートにモーターやヒーターなどの機材が接続されていた場合，これらの不適切な遠隔操作は大規模な物理的破壊を伴うかもしれない．これは「システムを悪用されてメールの不正中継に利用された」といった事案とは次元の異なる深刻な事態であり，なんとしても未然に防ぐ必要がある．</p>
+
+<p>Raspberry Gateは既存のUNIXベースのセキュリティゲートウェイと同等の構成をとるため，一定の水準の安全確保が期待できるが，セキュリティデバイスの常として，その機能や性能をどのようにして維持し続けるかが当該デバイスの初期性能の確保以上に重要な問題となる．</p>
+
+<p>この問題に対処し，情報セキュリティ上の脅威を簡単かつ持続的に低減する組織と手法として，著者らは “Raspberry Guardian” と名付けたソーシャルネットワークを活用した合意形成と機能維持のための手法を提案している．</p>
+
+<hr />
+
+<p>Copyright Notice of Header Image: 
+“Raspberries02” by Taken byfir0002
+<a href="http://commons.wikimedia.org/wiki/File:Raspberries02.jpg#/media/File:Raspberries02.jpg">Wikimedia Commons</a></p>
+</section>
+</article>
+
+    </div>
+    <script src="/js/main.js"></script>
+
+
+<footer class="site-footer">
+	<p class="text">Powered by <a href="http://jekyllrb.com">Jekyll</a> with <a href="https://rohanchandra.github.io/project/type/">Type Theme</a>
+</p>
+</footer>
+
+
+  </body>
+</html>
